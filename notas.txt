@@ -1,3 +1,15 @@
 npm run test // para correr Cypress
 
-Commands vamos a agregar los comandos a reutilizar
+Commands: vamos a agregar los comandos a reutilizar
+
+
+
+---
+Package. json
+
+   "test:ui": "cypress open", //Abre la UI
+    "test:headless": "cypress run", //Abre modo headless para realizar test por linea de comando CI/CD
+    "test:headless:chrome": "cypress run --browser chrome", //Especifico el navegador
+    "test:headless:firefox": "cypress run --browser firefox --spec cypress/e2e/navegacion.cy.js" //Especifico el test que quiero correr
+   
+    // Agrego el spec por si necesito realizar alguna prueba especifica
