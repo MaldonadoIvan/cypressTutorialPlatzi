@@ -75,6 +75,7 @@ describe( 'Interactuar con los elementos', () => {
     cy.get('@nombre').invoke('val').as('nombreGlobal')
     })
 
+    
     it('Compartir info', function(){
         cy.visit('/automation-practice-form')
         // cy.get('#lastName').as('nombre2')
@@ -82,12 +83,6 @@ describe( 'Interactuar con los elementos', () => {
         cy.get('#firstName').type(this.nombreGlobal)
     })
 
-    it('Compartir info', function(){
-        cy.visit('/automation-practice-form')
-        // cy.get('#lastName').as('nombre2')
-        // cy.get('@nombre2').type(texto)
-        cy.get('#firstName').type(this.nombreGlobal)
-    })
 
     it('Interactuando con los dropdown(select)', function(){
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/')

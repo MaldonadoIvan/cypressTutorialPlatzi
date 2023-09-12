@@ -37,6 +37,4 @@ describe('Guardando elementos', ()=>{
                 //Esta accion es igual a la anterior pero llegando desde una manera mas sencilla, ambas son validas
                 cy.get('form').find('label')
             })
-
-
 }) 
